@@ -1,4 +1,4 @@
-# Grafos 1 - LeetCode Questões
+# Grafos 2 - LeetCode Questões
 
 **Número da Lista**: 64<br>
 **Conteúdo da Disciplina**: Grafos 2<br>
