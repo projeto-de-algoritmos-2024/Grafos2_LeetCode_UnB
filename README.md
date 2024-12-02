@@ -14,14 +14,14 @@ No trabalho 2 de Projeto de Algoritmos, no módulo sobre Grafos 2 na disciplina,
 
 ## Screenshots (Questões)
 
-### X. xxxxx
+### 1568. Minimum Number of Days to Disconnect Island (SCC - Hard)
 
-- [Link da Questão]()
+- [Link da Questão](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island?envType=problem-list-v2&envId=strongly-connected-component)
 - [Vídeo - Explicação]()
   
-### X. xxxxx
+### 787. Cheapest Flights Within K Stops
 
-- [Link da Questão]()
+- [Link da Questão](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/?envType=problem-list-v2&envId=53js48ke)
 - [Vídeo - Explicação]()
   
 ### X. xxxxx
