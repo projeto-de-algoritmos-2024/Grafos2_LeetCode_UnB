@@ -10,7 +10,7 @@
 | 22/1007680  |  Bruno Ricardo de Menezes      |
 
 ## Sobre 
-No trabalho 2 de Projeto de Algoritmos, no módulo sobre Grafos 2 na disciplina, a dupla selecionou algumas questões do LeetCode. Sendo elas duas de nível difícil e uma de nível médio.
+No trabalho 2 de Projeto de Algoritmos, no módulo sobre Grafos 2 na disciplina, a dupla selecionou algumas questões do LeetCode. Sendo elas duas de nível difícil e Duas de nível médio.
 
 ## Screenshots (Questões)
 
@@ -19,7 +19,7 @@ No trabalho 2 de Projeto de Algoritmos, no módulo sobre Grafos 2 na disciplina,
 - [Link da Questão](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island?envType=problem-list-v2&envId=strongly-connected-component)
 - [Vídeo - Explicação]()
   
-### 787. Cheapest Flights Within K Stops
+### 787. Cheapest Flights Within K Stops (Dijikstra - Medium)
 
 - [Link da Questão](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/?envType=problem-list-v2&envId=53js48ke)
 - [Vídeo - Explicação]()
