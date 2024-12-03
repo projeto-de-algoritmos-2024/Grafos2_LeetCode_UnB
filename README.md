@@ -24,7 +24,12 @@ No trabalho 2 de Projeto de Algoritmos, no módulo sobre Grafos 2 na disciplina,
 - [Link da Questão](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/?envType=problem-list-v2&envId=53js48ke)
 - [Vídeo - Explicação]()
   
-### X. xxxxx
+### 847. Shortest Path Visiting All Nodes (Hard)
 
-- [Link da Questão]()
-- [Vídeo - Explicação]()
+- [Link da Questão](https://leetcode.com/problems/shortest-path-visiting-all-nodes/description/)
+- [Vídeo - Explicação](https://youtu.be/yxtkWCKd1u0)
+
+### 1584. Min Cost to Connect All Points (Medium)
+
+- [Link da Questão](https://leetcode.com/problems/min-cost-to-connect-all-points/description/)
+- [Vídeo - Explicação](https://youtu.be/lQUUZ7QHbMM)
