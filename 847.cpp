@@ -1,54 +1,52 @@
 class Solution {
 public:
-    // função para calcular a distância entre dois pontos (nós)
-    int calcularDistancia(vector<int>& pontoA, vector<int>& pontoB) {
-        return abs(pontoA[0] - pontoB[0]) + abs(pontoA[1] - pontoB[1]);
-    }
-
-    // função principal para calcular o menor custo de conectar os nós
     int shortestPathLength(vector<vector<int>>& graph) {
-        int n = graph.size(); // número de nós no grafo
 
-        // matriz que armazena as distâncias entre todos os pares de nós
-        vector<vector<int>> grafo(n, vector<int>(n));
+        // pega o número de nós do grafo
+        int n = graph.size();
+
+        // máscara de bits que vai auxiliar para armazenar os nós já visitados
+        int mascaraTotal = (1 << n) - 1;
+
+        // armazenando {nó, {distância, máscara}}
+        queue<pair<int, pair<int, int>>> fila;
+        set<pair<int, int>> visitados;
+
+        // colocando cada nó na fila com a máscara
+        // como exemplo, se colocarmos o nó 3, entraremos {3, {0, 0 0 0 1 1}}
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if (i != j) {
-                    grafo[i][j] = calcularDistancia(graph[i], graph[j]);
-                }
-            }
+            int mascara = (1 << i);
+            visitados.insert({i, mascara});
+            fila.push({i, {0, mascara}});
         }
 
-        // vetor que armazena o menor custo de conectar cada nó
-        vector<int> custo(n, INT_MAX);
-        // vetor que armazena os nós que já foram conectados
-        vector<bool> conectado(n, false);
+        // faz a BFS
+        while (!fila.empty()) {
+            int no = fila.front().first;
+            int dist = fila.front().second.first;
+            int mascara = fila.front().second.second;
+            fila.pop();
 
-        custo[0] = 0; // começa pelo primeiro nó e possui custo inicial e total = 0
-        int custoTotal = 0;
-
-        // algoritmo de Prim para conectar todos os nós, um por um, com o menor custo
-        for (int count = 0; count < n; count++) {
-            int noAtual = -1;
-            for (int i = 0; i < n; i++) {
-                if (!conectado[i] && (noAtual == -1 || custo[i] < custo[noAtual])) {
-                    noAtual = i;
+            for (int vizinho : graph[no]) {
+                // cria uma nova máscara de bits incluindo o nó atual (vizinho)
+                int novaMascara = (mascara | (1 << vizinho));
+                
+                // verifica se todos os nós foram visitados
+                if (novaMascara == mascaraTotal) 
+                    return dist + 1; // retorna a distância total (caminho mais curto)
+                
+                // se o nó já foi visitado, continua para o próximo
+                else if (visitados.count({vizinho, novaMascara})) 
+                    continue;
+                
+                // caso contrário, adiciona o novo vizinho na fila
+                else {
+                    fila.push({vizinho, {dist + 1, novaMascara}});
+                    visitados.insert({vizinho, novaMascara}); // marca como visitado
                 }
             }
 
-            // conecta o nó de menor custo e soma ao custoTotal o valor do nó atual
-            conectado[noAtual] = true;
-            custoTotal += custo[noAtual];
-
-            // atualiza os custos para os nós restantes, ou seja, para cada nó ainda não conectado,
-            // o algoritmo atualiza o custo caso ele seja menor que o custo atual armazenado
-            for (int i = 0; i < n; i++) {
-                if (!conectado[i] && grafo[noAtual][i] < custo[i]) {
-                    custo[i] = grafo[noAtual][i];
-                }
-            }
         }
-
-        return custoTotal; // retorna o custo total para conectar todos os pontos
+        return 0;
     }
 };
