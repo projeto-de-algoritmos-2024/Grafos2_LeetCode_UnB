@@ -29,7 +29,20 @@ No trabalho 2 de Projeto de Algoritmos, no módulo sobre Grafos 2 na disciplina,
 - [Link da Questão](https://leetcode.com/problems/shortest-path-visiting-all-nodes/description/)
 - [Vídeo - Explicação](https://youtu.be/yxtkWCKd1u0)
 
-### 1584. Min Cost to Connect All Points (Medium)
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/3b0deaec-6c39-47e0-989d-559d7919c547" width="700" alt="Questão 847">
+  <br>
+  <em>Imagem 3 - Questão 847</em>
+</div>
 
+### 1584. Min Cost to Connect All Points (Medium)
 - [Link da Questão](https://leetcode.com/problems/min-cost-to-connect-all-points/description/)
 - [Vídeo - Explicação](https://youtu.be/lQUUZ7QHbMM)
+
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/8311ae90-8e21-462b-a652-0d63d904fb5d" width="700" alt="Questão 1584">
+  <br>
+  <em>Imagem 4 - Questão 1584</em>
+</div>
+
+
