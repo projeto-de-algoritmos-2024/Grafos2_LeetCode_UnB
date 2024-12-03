@@ -17,13 +17,28 @@ No trabalho 2 de Projeto de Algoritmos, no módulo sobre Grafos 2 na disciplina,
 ### 1568. Minimum Number of Days to Disconnect Island (SCC - Hard)
 
 - [Link da Questão](https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island?envType=problem-list-v2&envId=strongly-connected-component)
-- [Vídeo - Explicação]()
+- [Vídeo - Explicação](https://youtu.be/7QCV27Y1TgA) (a partir do minuto 4:00)
+
   
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/b5838ae2-ea0f-459f-90eb-219f61785172" width="700" alt="Questão 847">
+  <br>
+  <em>Imagem 1 - Questão 1568</em>
+</div>
+
 ### 787. Cheapest Flights Within K Stops (Dijikstra - Medium)
 
+
 - [Link da Questão](https://leetcode.com/problems/cheapest-flights-within-k-stops/description/?envType=problem-list-v2&envId=53js48ke)
-- [Vídeo - Explicação]()
+- [Vídeo - Explicação](https://youtu.be/7QCV27Y1TgA)
   
+
+<div align="left">
+  <img src="https://github.com/user-attachments/assets/5693d21d-c05d-4a85-bca0-ed19d69dfeea" width="700" alt="Questão 847">
+  <br>
+  <em>Imagem 2 - Questão 797</em>
+</div>
+
 ### 847. Shortest Path Visiting All Nodes (Hard)
 
 - [Link da Questão](https://leetcode.com/problems/shortest-path-visiting-all-nodes/description/)
